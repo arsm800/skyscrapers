@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160531175422) do
+ActiveRecord::Schema.define(version: 20160603210529) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,4 +21,21 @@ ActiveRecord::Schema.define(version: 20160531175422) do
     t.string "country"
   end
 
+  create_table "skyscrapers", force: :cascade do |t|
+    t.integer "rank"
+    t.string  "name"
+    t.string  "city"
+    t.string  "country"
+    t.integer "heightM"
+    t.integer "heightF"
+    t.integer "floors"
+    t.integer "completedYr"
+    t.string  "materials"
+    t.string  "use"
+    t.integer "city_id"
+  end
+
+  add_index "skyscrapers", ["city_id"], name: "index_skyscrapers_on_city_id", using: :btree
+
+  add_foreign_key "skyscrapers", "cities"
 end
