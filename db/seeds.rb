@@ -7,4 +7,19 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-City.create([{name: "New York", country: "USA"}, {name: "Chicago", country: "USA"}, {name: "Shanghai", country: "China"}])
+# City.create([{name: "New York", country: "USA"}, {name: "Chicago", country: "USA"}, {name: "Shanghai", country: "China"}])
+
+require "csv"
+
+City.destroy_all
+
+
+csv_text = File.read(Rails.root.join("public", "cities.csv"))
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|
+  c = City.new
+  c.name = row["name"]
+  c.country = row["country"]
+  c.save
+  puts "#{c.name}, #{c.country} saved"
+end
