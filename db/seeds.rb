@@ -24,8 +24,8 @@ csv.each do |row|
   puts "#{c.name}, #{c.country} saved"
 end
 
-csv_text = File.read(Rails.root.join("public", "skyscrapers.csv"))
-csv = CSV.parse(csv_text, :headers => true)
+csv_text = File.read(Rails.root.join("public", "skyscrapers.csv")).encode!("UTF-8", "binary", invalid: :replace, undef: :replace, replace: "?")
+csv = CSV.parse(csv_text, :headers => true, :encoding => "iso-8859-1:utf-8")
 csv.each do |row|
   s = Skyscraper.new
   s.rank = row["rank"]
@@ -35,7 +35,7 @@ csv.each do |row|
   s.heightM = row["heightM"]
   s.heightF = row["heightF"]
   s.floors = row["floors"]
-  s.completedYr = row["completedYR"]
+  s.completedYr = row["completedYr"]
   s.materials = row["materials"]
   s.use = row["use"]
   city = City.find_by(name: row["name"])
