@@ -3,6 +3,7 @@ class CreateSkyscrapers < ActiveRecord::Migration
     create_table :skyscrapers do |t|
       t.integer :rank
       t.string :name
+      t.string :city_name
       t.string :country
       t.integer :heightM
       t.integer :heightF

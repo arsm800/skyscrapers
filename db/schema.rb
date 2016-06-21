@@ -17,14 +17,14 @@ ActiveRecord::Schema.define(version: 20160603210529) do
   enable_extension "plpgsql"
 
   create_table "cities", force: :cascade do |t|
-    t.string "name"
+    t.string "city_name"
     t.string "country"
   end
 
   create_table "skyscrapers", force: :cascade do |t|
     t.integer "rank"
     t.string  "name"
-    t.string  "city"
+    t.string  "city_name"
     t.string  "country"
     t.integer "heightM"
     t.integer "heightF"
