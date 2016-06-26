@@ -59,3 +59,22 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+
+# Prefix Verb   URI Pattern                                     Controller#Action
+# city_skyscrapers GET    /cities/:city_id/skyscrapers(.:format)          skyscrapers#index
+#        POST   /cities/:city_id/skyscrapers(.:format)          skyscrapers#create
+# new_city_skyscraper GET    /cities/:city_id/skyscrapers/new(.:format)      skyscrapers#new
+# edit_city_skyscraper GET    /cities/:city_id/skyscrapers/:id/edit(.:format) skyscrapers#edit
+# city_skyscraper GET    /cities/:city_id/skyscrapers/:id(.:format)      skyscrapers#show
+#        PATCH  /cities/:city_id/skyscrapers/:id(.:format)      skyscrapers#update
+#        PUT    /cities/:city_id/skyscrapers/:id(.:format)      skyscrapers#update
+#        DELETE /cities/:city_id/skyscrapers/:id(.:format)      skyscrapers#destroy
+# cities GET    /cities(.:format)                               cities#index
+#        POST   /cities(.:format)                               cities#create
+# new_city GET    /cities/new(.:format)                           cities#new
+# edit_city GET    /cities/:id/edit(.:format)                      cities#edit
+#   city GET    /cities/:id(.:format)                           cities#show
+#        PATCH  /cities/:id(.:format)                           cities#update
+#        PUT    /cities/:id(.:format)                           cities#update
+#        DELETE /cities/:id(.:format)                           cities#destroy
+#   root GET    /                                               cities#index

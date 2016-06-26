@@ -30,6 +30,16 @@
    margin: 0.1em;
  }
 
+ .skyscraper {
+   color: white;
+   font-family: helvetica;
+   background-color: purple;
+   padding: 1em 1em 1em 1em;
+   text-decoration: none;
+   float: left;
+   margin: 0.1em;
+ }
+
  header {
    background-color: navy;
    padding-top: 1em;
