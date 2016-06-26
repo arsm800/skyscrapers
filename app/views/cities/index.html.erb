@@ -1,5 +1,5 @@
 <h1>test</h1>
 
 <% @cities.each do |city| %>
-  <%= link_to city.city_name, city_path(city) %>
+  <div> <%= link_to city.city_name, city_skyscrapers_path(city) %> </div>
 <% end %>
