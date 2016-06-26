@@ -1,1 +1,7 @@
-<h1> <%= @skyscrapers.count %> </h1>
+<h1> <%= @cities.city_name %> </h1>
+
+<h2> <%= @skyscrapers.count %> </h2>
+
+<% @skyscrapers.each do |skyscraper| %>
+  <h3> <%= skyscraper.name %> <h3>
+<% end %>
