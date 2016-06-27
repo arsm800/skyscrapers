@@ -17,13 +17,13 @@
  .application {
   text-align: center;
   font-family: helvetica;
-  color: white;
+  color: navy;
  }
 
  .city {
    color: white;
    font-family: helvetica;
-   background-color: green;
+   background-image: url("2.jpg");
    padding: 1em 1em 1em 1em;
    text-decoration: none;
    float: left;
@@ -40,8 +40,16 @@
    margin: 0.1em;
  }
 
+ .title {
+   font-family: helvetica;
+ }
+
  header {
    background-color: navy;
    padding-top: 1em;
    padding-bottom: 1em;
+ }
+
+ table {
+   font-family: helvetica;
  }

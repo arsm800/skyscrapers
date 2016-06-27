@@ -1,8 +1,20 @@
-  <%= @skyscraper.rank %>
-  <%= @skyscraper.name %>
-  <%= @skyscraper.heightM %>
-  <%= @skyscraper.heightF %>
-  <%= @skyscraper.floors %>
-  <%= @skyscraper.completedYr %>
-  <%= @skyscraper.materials %>
-  <%= @skyscraper.use %>
+<h1 class="title"> <%= @skyscraper.name %> </h1>
+
+<table>
+  <th>Rank</th>
+  <th>Height (M)</th>
+  <th>Height (F)</th>
+  <th>Floors</th>
+  <th>Year Completed</th>
+  <th>Materials Used</th>
+  <th>Use</th>
+  <tr>
+    <td> <%= @skyscraper.rank %> </td>
+    <td> <%= @skyscraper.heightM %> </td>
+    <td> <%= @skyscraper.heightF %> </td>
+    <td> <%= @skyscraper.floors %> </td>
+    <td> <%= @skyscraper.completedYr %> </td>
+    <td> <%= @skyscraper.materials %> </td>
+    <td> <%= @skyscraper.use %> </td>
+  </tr>
+</table>
