@@ -20,14 +20,40 @@
   color: navy;
  }
 
- .city {
+ .Abu-Dhabi {
+   background-image: url("abu-dhabi.jpg");
    color: white;
    font-family: helvetica;
-   background-image: url("2.jpg");
    padding: 1em 1em 1em 1em;
    text-decoration: none;
    float: left;
    margin: 0.1em;
+ }
+
+ .Atlanta {
+   background-image: url("atlanta.jpg");
+   color: white;
+   font-family: helvetica;
+   padding: 1em 1em 1em 1em;
+   text-decoration: none;
+   float: left;
+   margin: 0.1em;
+ }
+
+ .city {
+   color: white;
+   font-family: helvetica;
+   padding: 1em 1em 1em 1em;
+   text-decoration: none;
+   float: left;
+   margin: 0.1em;
+   height: 20em;
+   width: 20em;
+ }
+
+ .photo {
+   height: 20em;
+   width: 20em;
  }
 
  .skyscraper {
