@@ -59,6 +59,10 @@
    float: left;
  }
 
+ .photo:hover {
+   opacity: 0.50;
+ }
+
  .skyscraper {
    color: white;
    font-family: helvetica;
