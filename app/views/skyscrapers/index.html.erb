@@ -1,7 +1,7 @@
-<h1 class="title"> <%= @cities.city_name %> </h1>
+<h1 class="title"> <%= @city.city_name %> </h1>
 
 <h2> <%= @skyscrapers.count %> </h2>
 
 <% @skyscrapers.each do |skyscraper| %>
-  <%= link_to skyscraper.name, city_skyscraper_path(@cities, skyscraper), class: "skyscraper" %>
+  <%= link_to skyscraper.name, city_skyscraper_path(@city, skyscraper), class: "skyscraper" %>
 <% end %>

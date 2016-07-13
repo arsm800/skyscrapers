@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :cities do
+  resources :cities, param: :slug do
     resources :skyscrapers
   end
   root 'cities#index'
