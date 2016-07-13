@@ -1,7 +1,7 @@
 <h1 class="title">Cities</h1>
 
 <% @cities.each do |city| %>
-  <div class="photo" style="background-image: url(/assets/<%= city.city_name %>.jpg)"> <%= link_to city.city_name, city_skyscrapers_path(city), class: "city" %> </div>
+  <div class="photo" style="background-image: url(/assets/<%= city.city_name.gsub(' ', '_') %>.jpg)"> <%= link_to city.city_name, city_skyscrapers_path(city), class: "city" %> </div>
 <% end %>
 
 <
